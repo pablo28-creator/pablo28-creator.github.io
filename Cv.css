@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'opensans';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ambleregular';
+    src: url('Amble-Regular-webfont.eot');
+    src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Regular-webfont.woff2') format('woff2'),
+         url('Amble-Regular-webfont.woff') format('woff'),
+         url('Amble-Regular-webfont.ttf') format('truetype'),
+         url('Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: "opensans", Arial, sans-serif;
+}
+h1, h2, h3 
+{
+    font-family: "ambleregular", Arial, sans-serif;
+}
+.conteneur
+{
+    display: flex;
+}
+.partiegauche
+{
+    background-color: #ef5350;
+    text-align:center;
+    flex: 1;
+}
+.partiedroite
+{
+    flex: 3;
+    margin: 2em;
+}   
+h1
+{
+    font-size: 2.5em;
+}
+h1 em
+{
+    color:#ef5350;
+}
+figure
+{
+    text-align: center;
+    font-size: 4em;
+}
+img
+{
+    max-width: 100%;
+	height: auto;
+}
+h2 em
+{
+    text-decoration:underline #ef5350;
+}
+h1+h2
+{
+    font-style: italic;
+    padding-bottom: 2em;
+}
+.partiegauche h2
+{
+    text-align: center;
+    background-color:black;
+    color: #ef5350;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.partiegauche ul , .recommandation ul
+{
+    list-style-type: none;
+    color: black;
+}
+.partiegauche article
+{
+    line-height: 1.5em;
+    text-align: justify;
+}
+span
+{
+    font-weight: bold;
+}
+h2+p
+{
+    margin: 2em;
+    margin-bottom: 30%;
+}
+h3
+{
+    font-weight: bold;
+}
+.titre
+{
+    display: flex;
+    border-bottom: 0.2em double #ef5350;
+}
+.icon
+{
+    margin-right: 0.5em;
+}
+.fa-stack 
+{ 
+    font-size: 3em; 
+}
+i 
+{ 
+    vertical-align: middle; 
+}
+.date
+{
+    font-weight: bold;
+}
+.paragraphe
+{ 
+    display: flex;
+    color: black;
+}
+.resume
+{
+    padding-left: 10em;
+}
+ul
+{
+    color: #ef5350;
+}
+h4
+{
+    margin-left: 2.5em;
+}
+.recommandation
+{
+    display: flex;
+    justify-content: space-around;  
+}
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        width: auto;
+    }
+    .conteneur
+    {
+        flex-direction: column;
+    }
+    .paragraphe
+    {
+        flex-direction: column;
+    }
+    .resume
+    {
+        padding-left: 1em;
+    }   
+}
+@media all and (max-width: 450px)
+{
+    .recommandation
+    {
+        flex-direction: column;
+    }
+    h2 
+    {
+        font-size: 1em;
+    }
+}
+@media all and (min-width:645px) and (max-width: 1024px)
+{
+    h2+ul
+    {
+        margin-left: 40%;
+    }
+    h2+p 
+    {
+        margin-bottom: 5%;
+    }
+    .fa-stack
+    {
+        margin-right: 1.8em;
+    }
+}
